@@ -1,0 +1,11 @@
+/*the underscore tells scss that it's a file to be loaded */
+.menu > .menu-text {
+    color: #363530;
+}
+.menu > .menu-text > a {
+    display: inline;
+    padding: 0;
+}
+.top-bar, .top-bar ul {
+    background-color: $pomRed; 
+}

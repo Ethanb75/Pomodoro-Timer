@@ -1,0 +1,15 @@
+@import "base/variables";
+@import "components/navigation";
+
+body {
+    background-color: $pomTan;
+}
+a {
+    color: whitesmoke;
+}
+a:hover {
+    color: wheat;
+}
+a:focus {
+    color: wheat;
+}
