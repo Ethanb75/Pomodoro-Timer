@@ -1,1 +1,2 @@
-Boilerplate react app# Pomodoro-Timer
+# Pomodoro-Timer
+a simple app to help productivity. Built with react, styled with scss
