@@ -1,8 +1,9 @@
 var React = require('react');
+import Clock from 'Clock';
 var Pomodoro = (props) => {
     return (
         <div>
-            <h1>Pomodoro Page</h1>
+            <Clock totalSeconds={100} />
         </div>
     );
 }

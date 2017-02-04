@@ -34,6 +34,7 @@ module.exports = {
             About: 'app/components/About.jsx',
             Timer: 'app/components/Timer.jsx',
             Pomodoro: 'app/components/Pomodoro.jsx',
+            Clock: 'app/components/Clock.jsx',
             //styles
             applicationStyle: 'app/styles/app.scss'
         },
