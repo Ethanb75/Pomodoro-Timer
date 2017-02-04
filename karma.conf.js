@@ -2,7 +2,7 @@ var webpackConfig = require("./webpack.config.js");
 module.exports = function(config){
     config.set({
         //which browsers to test in
-        browsers: ['Chrome'],
+        browsers: ['Chrome','ChromeCanary'],
         singleRun: true,
         //use the mocha framework for reading the tests
         frameworks: ['mocha'],

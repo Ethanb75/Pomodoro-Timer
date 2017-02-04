@@ -8,9 +8,9 @@ var Nav = () => {
                 <div className="top-bar-left">
                     <ul className="menu">
                         <li className="menu-text">Simple pomodoro timer</li>
-                        <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Timer</IndexLink></li>
-                        <li><Link to="/pom" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Pomodoro</Link></li>
-                        <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
+                        <li><IndexLink to="/" activeClassName="active">Timer</IndexLink></li>
+                        <li><Link to="/pom" activeClassName="active">Pomodoro</Link></li>
+                        <li><Link to="/about" activeClassName="active">About</Link></li>
                     </ul>
                 </div>
                 <div className="top-bar-right">

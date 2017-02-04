@@ -5,7 +5,9 @@ var ReactDOM = require('react-dom');
 //configures routes for our single app
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 var Main = require('Main');
-
+var About = require('About');
+var Timer = require('Timer');
+var Pomodoro = require('Pomodoro');
 
 //load in foundation in js (wew lad)
 require('style!css!foundation-sites/dist/css/foundation.min.css')
@@ -19,7 +21,9 @@ ReactDOM.render(
 	// the path route will be rendered if the route is '/' then 'about'
 		<Router history={hashHistory}>
 			<Route path="/" component={Main}>
-				
+				<Route path="about" component={About} />
+				<Route path="pom" component={Pomodoro} />
+				<IndexRoute component={Timer} />
 			</Route>
 		</Router>,
 		document.getElementById('app')
