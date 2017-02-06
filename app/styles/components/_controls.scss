@@ -1,0 +1,11 @@
+.controls {
+    display: flex;
+    justify-content: center;
+
+    .button {
+        padding: .75rem 3rem;
+    }
+    .button:nth-of-type(1){
+        margin-right: 1.5rem;
+    }
+}
