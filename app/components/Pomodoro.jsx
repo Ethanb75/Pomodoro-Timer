@@ -1,10 +1,25 @@
-var React = require('react');
+import React from 'react';
 import Clock from 'Clock';
-var Pomodoro = (props) => {
-    return (
-        <div>
-            <Clock totalSeconds={100} />
-        </div>
-    );
-}
+import PomForm from 'PomForm';
+var Pomodoro = React.createClass({
+    getInitialState: function(){
+        return {count: 0}
+    },
+    handleSetCountDown: function( seconds ){
+        this.setState({
+            count: seconds
+        });
+    },
+    render: function(props){
+         var {count} = this.state;
+         return (
+            <div>
+                <h2 className="text-center">Pomodoro Timer</h2>
+                <Clock totalSeconds={count} />
+                <PomForm onSetCountdown={this.handleSetCountDown}/>
+            </div>
+        );
+    } 
+   
+});
 module.exports = Pomodoro;
