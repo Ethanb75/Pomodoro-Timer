@@ -9,9 +9,15 @@ var PomForm = React.createClass({
     },
     render: function(){
         return (
-            <form ref="form" onSubmit={this.onSubmit} className="countdown-form">
-                <button className="button expanded">Start Pom</button>
-            </form>
+            <div>
+                <form ref="form" onSubmit={this.onSubmit} className="countdown-form">
+                    <button className="button expanded">Start Pom</button>
+                </form>
+                <form ref="form" onSubmit={this.onSubmit} className="countdown-form">
+                    <button className="button expanded">Start Pom</button>
+                </form>
+            </div>
+            
         );
     }
 });
