@@ -37,6 +37,8 @@ module.exports = {
             PomForm: 'app/components/PomForm.jsx',
             Clock: 'app/components/Clock.jsx',
             CountDownForm: 'app/components/CountDownForm.jsx',
+            Controls: 'app/components/Controls.jsx',
+
             //styles
             applicationStyle: 'app/styles/app.scss'
         },
