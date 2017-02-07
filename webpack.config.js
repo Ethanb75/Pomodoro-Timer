@@ -38,6 +38,8 @@ module.exports = {
             Clock: 'app/components/Clock.jsx',
             CountDownForm: 'app/components/CountDownForm.jsx',
             Controls: 'app/components/Controls.jsx',
+            StopWatch: 'app/components/StopWatch.jsx',
+            StopWatchForm: 'app/components/StopWatchForm.jsx',
 
             //styles
             applicationStyle: 'app/styles/app.scss'

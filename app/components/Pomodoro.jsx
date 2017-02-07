@@ -59,7 +59,7 @@ var Pomodoro = React.createClass({
          }
          return (
             <div>
-                <h2 className="text-center">Pomodoro Timer</h2>
+                <h2 className="text-center page-title">Pomodoro Timer</h2>
                 <Clock totalSeconds={count} />
                 {renderControlArea()}
             </div>

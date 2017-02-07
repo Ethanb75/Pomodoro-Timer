@@ -8,6 +8,7 @@ var Main = require('Main');
 var About = require('About');
 var Timer = require('Timer');
 var Pomodoro = require('Pomodoro');
+var StopWatch = require('StopWatch');
 
 //load in foundation in js (wew lad)
 require('style!css!foundation-sites/dist/css/foundation.min.css')
@@ -22,6 +23,7 @@ ReactDOM.render(
 		<Router history={hashHistory}>
 			<Route path="/" component={Main}>
 				<Route path="about" component={About} />
+				<Route path="stopWatch" component={StopWatch} />
 				<Route path="pom" component={Pomodoro} />
 				<IndexRoute component={Timer} />
 			</Route>

@@ -1,9 +1,9 @@
 import React from 'react';
 import Clock from 'Clock';
-import CountDownForm from 'CountDownForm';
+import StopWatchForm from 'StopWatchForm';
 import Controls from 'Controls';
 
-var Timer = React.createClass({
+var StopWatch = React.createClass({
     getInitialState: function(){
         return {
             count: 0,
@@ -31,14 +31,11 @@ var Timer = React.createClass({
     },
     startTimer: function(){
         this.timer = setInterval(() => {
-            var newCount = this.state.count - 1;
+            var newCount = this.state.count + 1;
             this.setState({
                count: newCount >= 0 ? newCount: 0
             });
 
-            if(newCount === 0){
-                this.setState({countdownStatus: 'stopped'});
-            }
         },1000)
     },
     handleSetCountdown: function( seconds ){
@@ -58,12 +55,12 @@ var Timer = React.createClass({
             if(countdownStatus !== 'stopped'){
                 return <Controls countdownStatus={countdownStatus} onStatusChange={this.handleStatusChange} />
             } else {
-                return <CountDownForm onSetCountdown={this.handleSetCountdown} />
+                return <StopWatchForm onSetCountdown={this.handleSetCountdown} />
             } 
         }
         return (
             <div>
-                <h2 className="text-center page-title">Countdown Timer</h2>
+                <h2 className="text-center page-title">StopWatch</h2>
                 <Clock totalSeconds={count}/>
                 {renderControlArea()}
             </div>
@@ -71,4 +68,4 @@ var Timer = React.createClass({
     }
    
 });
-module.exports = Timer;
+module.exports = StopWatch;

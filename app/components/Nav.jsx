@@ -10,6 +10,7 @@ var Nav = () => {
                         <li className="menu-text">Simple pomodoro timer</li>
                         <li><IndexLink to="/" activeClassName="active">Timer</IndexLink></li>
                         <li><Link to="/pom" activeClassName="active">Pomodoro</Link></li>
+                        <li><Link to="/stopWatch" activeClassName="active">StopWatch</Link></li>
                         <li><Link to="/about" activeClassName="active">About</Link></li>
                     </ul>
                 </div>
