@@ -10,8 +10,7 @@ var Timer = require('Timer');
 var Pomodoro = require('Pomodoro');
 var StopWatch = require('StopWatch');
 
-//load in foundation in js (wew lad)
-require('style!css!foundation-sites/dist/css/foundation.min.css')
+
 $(document).foundation();
 
 //require for our custom app.css

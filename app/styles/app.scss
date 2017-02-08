@@ -1,4 +1,11 @@
 @import "base/variables";
+
+//foundation fix
+@import "base/foundation-settings";
+@import "foundation";
+@include foundation-everything;
+
+//component styles
 @import "components/navigation";
 @import "components/clock";
 @import "components/controls";
@@ -11,8 +18,8 @@ a {
     color: whitesmoke;
 }
 a:hover {
-    color: wheat;
+    color: $wheatThins;
 }
 a:focus {
-    color: wheat;
+    color: $wheatThins;
 }

@@ -1,4 +1,6 @@
 var webpack = require('webpack')
+//built in node variable 'path'
+var path = require('path');
 
 module.exports = {
     // tells webpack where to start processing code
@@ -64,6 +66,12 @@ module.exports = {
                 // now we specify which files we don't want to include'
                 exclude: /(node_modules|bower_components)/
             }
+        ]
+    },
+    sassLoader: {
+        //defines an array of paths we want to include
+        includePaths: [
+            path.resolve(__dirname, "./node_modules/foundation-sites/scss")
         ]
     },
     devtool: 'cheap-module-eval-source-map'

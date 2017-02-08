@@ -7,7 +7,11 @@ module.exports = function(config){
         //use the mocha framework for reading the tests
         frameworks: ['mocha'],
         //below are test files we wish to run, use globs, we take files from any folder inside tests, and file with the correct ending
-        files: ['app/tests/**/*.test.jsx'],
+        files: [
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/foundation-sites/dist/js/foundation.min.js',
+            'app/tests/**/*.test.jsx'
+            ],
         // what we want to do with our test files
         preprocessors: {
             //for the test files, run webpack to load components and sourcemap
